@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    int n = 5;
+    int n = 6;
     int & ref = n;
     ref = 7;
     cout << n << endl;
