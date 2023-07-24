@@ -6,7 +6,7 @@ class CCar; // 提前声明一下CCar，编译器会将其当做一个累出来
 
 class CDriver{
     public:
-        void Modifycar(CCar * pCar){};  // CCar *是一个指针类型，所以在前面声明即可。如果使用CCar Car，即为一个对象那么CCar需要在前面定义完整
+        void Modifycar(CCar * pCar);  // CCar *是一个指针类型，所以在前面声明即可。如果使用CCar Car，即为一个对象那么CCar需要在前面定义完整
 };
 class CCar{
     private:
@@ -17,9 +17,15 @@ class CCar{
 
 void CDriver::Modifycar(CCar * pCar){
     pCar->price += 1000;
-}
+};
 
-
+int MostExpensiveCar ( CCar cars[], int total) {
+    int temMax = -1;
+    for (int i = 0; i < total; i++) {
+        if (cars[i].price > temMax) 
+            temMax = cars[i].price;
+    }
+};
 
 int main(){
     
