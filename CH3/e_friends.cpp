@@ -19,7 +19,7 @@ void CDriver::Modifycar(CCar * pCar){
     pCar->price += 1000;
 };
 
-int MostExpensiveCar ( CCar cars[], int total) {
+int MostExpensiveCar (CCar cars[], int total) {
     int temMax = -1;
     for (int i = 0; i < total; i++) {
         if (cars[i].price > temMax) 
