@@ -33,10 +33,5 @@ int main () {
     s = "Shenzhou 8!"; // 等价于 s.operator=("Shenzhou 8!");
     cout << s.c_str() << endl;
 
-    char *test;
-    test = new char[10];
-    delete test;
-    test = new char[3];
-    
     return 0;
 }
